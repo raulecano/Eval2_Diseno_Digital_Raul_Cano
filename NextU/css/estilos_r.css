@@ -1,0 +1,169 @@
+/* Definición del sistema de rejilla */
+/* ---------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+body {
+	background-color: #02010a;
+	margin: 0 auto;
+	font-family: "Dancing Scripta";
+	color: #333;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 100%;
+    height: 100%;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* ---------------------------------------------------------- */
+/* Generalidades*/
+a, ol, ul { list-style: none; }
+a img { border: 0; }
+:focus { outline: 0; }
+a:hover, a:active { outline: none; }
+a:link   
+{   
+ text-decoration:none;   
+}
+
+.contenedor{
+    width: 900px;
+    height: 100%;
+    background-color: white;
+    font-family: Dancing Script;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Encabezado */
+/* -----------------------------------------------------------*/
+.header {
+    background-color: #5b7989;
+    display: block;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: #FFFFFF;
+	padding: 5px;
+	height: 100%;
+}
+.header .col-7.nom {
+    color: #FFFFFF;
+    text-shadow: 2px 0px #02010A;
+    font-family: aclonica;
+    font-style: normal;
+    margin: 0;
+    font-size: 16px;
+}
+/* NAV */
+.header .col-5.menu {
+	height: 100%;
+	margin: 0;
+}
+.header .col-5.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EFF8F7;
+}
+
+.header .col-5.menu li {
+    float: left;
+	border-right: 1px solid #bbb;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+.header .col-5.menu li:last-child {
+    border-right: none;
+}
+.header .col-5.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 2px;
+    text-decoration: none;
+	margin: 0;
+}
+
+
+.header .col-5.menu li a:hover {
+    background-color: #D9EFEC;
+}
+.active {
+    background-color: #D9EFEC;
+}
+.header .col-5.menu li a h3{
+    display: block;
+    color: #60BEAE;
+    font-size: 16px;
+}
+.header .col-5.menu li a h3:hover {
+    color: #EF540E;
+}
+.header .col-3.logo {
+    background-color: #5B7989;
+}
+.header .col-3.logo img {
+    width: 100px;
+    margin: 0;
+    float: right;
+}
+/*-------------------------------------------------------------*/
+
+/* contenido */
+/* -----------------------------------------------------------*/
+
+.img_1, .img_2, .img_3, .img_4, .img_5, .img_6{
+	padding: 10px 10px 10px 10px;
+}
+
+.img_1 img{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+.img_2, .img_4, .img_6 img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.img_3 img{
+	-webkit-filter: sepia(100%);
+}
+/* -----------------------------------------------------------*/
+
+/* FOOTER 
+----------------------------------------------- */
+
+.footer {
+    background-color: #C6D5C5;
+    border-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.footer h3{
+    color: #000000;
+    text-shadow: 1px 0px #FFFFFF;
+}
+.footer p{
+    font-style: italic;
+}
+.footer ul li a {
+    color: #000000;
+    font-size: 15px;
+    font-style: italic;
+    text-shadow: 1px 0px #FFFFFF;
+}
+

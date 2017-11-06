@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 900px) {
+	
+	html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, a,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+    outline: 0;
+}
+    body, .contenedor, .main, .img_central, .img_sec, .header, .menu, .header .col-5.menu ul, .footer {
+        background-color: #FFFFFF;
+    
+	
+	}	
+.header { 
+	flex:1;
+	order: 1; 
+	}
+.nom {
+    width: 100%;
+    order: 2;
+    text-align: center;
+	}
+.menu {
+    width: 100%;
+    order: 3;
+	}
+.menu ul li a{
+    width: 100px;
+	}	
+.img_central {
+    width: 70%;
+    flex: 1;
+    order: 1;
+    padding: 10px 10px 10px 10px;
+    float: none;
+	}
+.img_sec {
+    width: 100%;
+    flex: 1;
+    order: 1;
+	}	
+.img_sec1     {
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    order: 2;
+    float: none;
+	}
+.img_sec2   {
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    order: 3;
+    float: none;
+	}
+	
+.footer{
+    border-top: 1px solid #AAAAAA;
+	}
+	.footer img{width: 50px;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.contacto{
+    width: 50%;
+    flex: 1;
+    order: 1;
+    padding: 10px 10px 10px 10px;
+    float: none;
+	}
+	.terminos{
+	 width: 50%;
+		order: 2;
+    padding: 10px 10px 10px 10px;
+    float: none;
+	}
+	.redes_sociales{
+	 width: 50%;
+		order: 3;
+	padding: 10px 10px 10px 10px;
+    float: none;
+	}
+	.derechos{
+    width: 50%;
+    order: 4;
+	padding: 10px 10px 10px 10px;
+    float: none;
+	}
+	
+}
+	
+.header .nom h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }	
+}
